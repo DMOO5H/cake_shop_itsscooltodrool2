@@ -1,65 +1,72 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen flex flex-col">
+      {/* Header */}
+      <header className="header">
+        <div className="logo">
+          IT'S <span className="logo-highlight">COOL</span>TO DROOL
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <nav>
+          <ul className="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cakes">Our Cakes</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button className="place-order-btn">Place Order</button></li>
+          </ul>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="hero-content">
+          <p className="hero-heading">Sweeten Your Day with Our</p>
+          <h1 className="hero-title">IRRESISTIBLE CAKES</h1>
+          <p className="hero-description">Discover the most delicious, custom-made cakes for every occasion!</p>
+          <button className="view-cakes-btn">View Cakes</button>
         </div>
-      </main>
+        <div className="hero-images">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=400&fit=crop"
+            alt="Delicious decorated cakes display"
+            style={{ maxWidth: '100%', height: 'auto' }}
+          />
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="features">
+        <div className="feature-card">
+          <div className="feature-icon">🥄</div>
+          <h3 className="feature-title">Fresh Ingredients</h3>
+          <p className="feature-description">We use only the finest, freshest ingredients in our cakes.</p>
+        </div>
+        <div className="feature-card">
+          <div className="feature-icon">🎂</div>
+          <h3 className="feature-title">Custom Orders</h3>
+          <p className="feature-description">Get your cake your way – perfectly personalized to your site.</p>
+        </div>
+        <div className="feature-card">
+          <div className="feature-icon">📅</div>
+          <h3 className="feature-title">Reliable Service</h3>
+          <p className="feature-description">Easy online ordering and timely, trustworthy delivery.</p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-logo">IT'S COOL TO DROOL</div>
+          <p className="footer-text">© 2024 It's Cool to Drool. All rights reserved.</p>
+        </div>
+        <div className="footer-content">
+          <p className="footer-text">Follow Us |</p>
+          <ul className="social-links">
+            <li><a href="#facebook" title="Facebook">f</a></li>
+            <li><a href="#instagram" title="Instagram">📷</a></li>
+            <li><a href="#twitter" title="Twitter">𝕏</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
   );
 }
