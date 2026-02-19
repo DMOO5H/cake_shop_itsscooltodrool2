@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Roboto } from "next/font/google";
+import { Geist, Geist_Mono, Old_Standard_TT, Roboto } from "next/font/google";
 import "./globals.css";
 
-const roboto = Roboto({
-  variable: "--font-geist-sans",
+const oldStandardTT = Old_Standard_TT({
+  weight: ["400", "700"],
   subsets: ["latin"],
-});
-
-
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} antialiased`}
+        className={`${oldStandardTT.className} antialiased`}
       >
         {children}
       </body>
