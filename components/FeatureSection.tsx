@@ -62,8 +62,15 @@ export default function FeatureSection() {
                 onClick={() => setOpen({ src: img, alt: `cake-${idx}` })}
                 className="rounded-lg overflow-hidden shadow-lg bg-white/60 p-0 border-0 focus:outline-none"
               >
-                <div className="relative w-44 h-36 md:w-48 md:h-40">
-                  <Image src={img.src} alt={`cake-${idx}`} className="object-cover" fill sizes="(max-width: 768px) 50vw, 20vw" />
+                <div className="flex items-center justify-center h-36 md:h-40">
+                  <Image
+                    src={img.src}
+                    alt={`cake-${idx}`}
+                    width={img.width}
+                    height={img.height}
+                    className="h-36 md:h-40 w-auto object-contain"
+                    sizes="(max-width: 768px) 50vw, 20vw"
+                  />
                 </div>
               </button>
             ))}
