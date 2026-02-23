@@ -47,14 +47,14 @@ export default function FeatureSection() {
               <div className="text-6xl mb-4" aria-hidden>
                 {f.icon}
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">{f.title}</h3>
-              <p className="text-gray-700 text-sm md:text-base">{f.description}</p>
+              <h3 className="text-2xl font-bold text-amber-800 mb-2">{f.title}</h3>
+              <p className="text-amber-800 text-sm md:text-base">{f.description}</p>
             </div>
           ))}
         </div>
 
         <div className="flex flex-col items-center justify-center mt-12 gap-6">
-          <h2 className="text-3xl font-bold text-gray-800">Our Cakes</h2>
+          <h2 className="text-3xl font-bold text-amber-800">Our Products</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 w-full items-center mt-4">
             {gallery.map((img, idx) => (
               <button
@@ -62,13 +62,13 @@ export default function FeatureSection() {
                 onClick={() => setOpen({ src: img, alt: `cake-${idx}` })}
                 className="rounded-lg overflow-hidden shadow-lg bg-white/60 p-0 border-0 focus:outline-none"
               >
-                <div className="flex items-center justify-center h-36 md:h-40">
+                <div className="flex items-center justify-center h-72 md:h-80">
                   <Image
                     src={img.src}
                     alt={`cake-${idx}`}
                     width={img.width}
                     height={img.height}
-                    className="h-36 md:h-40 w-auto object-contain"
+                    className="h-48 md:h-60 w-auto object-contain"
                     sizes="(max-width: 768px) 50vw, 20vw"
                   />
                 </div>
