@@ -1,8 +1,8 @@
-import Navbar from "./Navbar";
 import Hero from "./Hero";
 import AboutUs from "./AboutUs";
 import FeatureSection from "./FeatureSection";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 export default function HomePage() {
   return (
