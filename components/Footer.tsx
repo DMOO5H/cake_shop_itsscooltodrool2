@@ -1,9 +1,10 @@
 import { IconBrandX, IconBrandFacebook, IconBrandInstagram } from '@tabler/icons-react';
 
 export default function Footer() {
+  const date = new Date();
     return (
         <footer className="flex flex-row items-center justify-between py-8 px-8 bg-teal-500 text-white">
-            <span className="text-white text-xl">©2024 All Rights Reserved</span>
+            <span className="text-white text-xl">©{date.getFullYear()} All Rights Reserved</span>
             <div className="flex flex-row items-center justify-between gap-8">
               <span className="text-white text-xl">Follow Us</span>
               <a
@@ -14,7 +15,9 @@ export default function Footer() {
               </a>
 
               <a
-                href="#instagram"
+                href="https://www.instagram.com/itscooltodrool/"
+                target="_blank"
+                rel="noopener norefeerrer"
                 className="bg-white text-rose-500 w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-100 transition-all duration-300 shadow-md"
               >
                 <IconBrandInstagram />

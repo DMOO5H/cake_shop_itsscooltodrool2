@@ -18,12 +18,12 @@ export default function AboutUs() {
                 <div className="w-full md:w-1/2 text-center md:text-left text-gray-800 px-4">
                     <h2 className="text-4xl text-amber-800 font-bold">About Us</h2>
                     <p className="mt-4 text-amber-800 leading-relaxed">
-                        Its Cool To Drool Cake Shop is a family-run bakery creating handcrafted cakes
+                        Its Cool To Drool Cake Shop is a family-run bakery creating handcrafted cakes and pastries
                         made from premium ingredients. We blend classic techniques with creative
-                        flavors to make every celebration memorable.
+                        flavors to make every celebration and occasion memorable.
                     </p>
                     <p className="mt-3 text-amber-800 leading-relaxed">
-                        Visit our shop or order online for customized cakes, cupcakes, and treats
+                        Visit our shop or order online for customized cakes, cupcakes, pastries, and treats
                         baked fresh daily — made with love for every special moment.
                     </p>
                 </div>

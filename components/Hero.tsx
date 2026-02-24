@@ -9,7 +9,7 @@ export default function Hero() {
                     <p className="text-lg md:text-xl italic text-rose-700 mb-4">Spice Up Your Day with Our</p>
                     <h1 className="text-4xl md:text-6xl font-serif leading-tight tracking-wide text-rose-800 drop-shadow-[0_2px_6px_rgba(0,0,0,0.25)]">IRRESISTIBLE<br/>CULINARY AND PASTRY PRODUCTS</h1>
                     <p className="mt-6 text-sm md:text-base text-rose-700">Discover the most delicious, custom-made cakes and pastry items for every occasion!</p>
-                    <button className="mt-8 inline-block bg-rose-300 text-rose-900 px-6 py-3 rounded shadow-md hover:bg-rose-100 transition-colors duration-300">View Cakes</button>
+                    <button className="mt-8 inline-block bg-rose-300 text-rose-900 px-6 py-3 rounded shadow-md hover:bg-rose-100 transition-colors duration-300">View Products</button>
                 </div>
                 <div className="w-full md:w-1/2 flex justify-center">
                     <div className="bg-white rounded-2xl shadow-lg overflow-hidden p-4 w-full max-w-md">
