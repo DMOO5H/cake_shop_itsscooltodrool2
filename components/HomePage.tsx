@@ -6,6 +6,7 @@ import FeatureSection from "./FeatureSection";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
+
 export default function HomePage() {
   return (
     <div>
