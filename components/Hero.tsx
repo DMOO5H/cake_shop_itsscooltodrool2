@@ -4,7 +4,9 @@ import Background from "../assets/Background.jpeg";
 export default function Hero() {
     return (
         <section className="flex items-center justify-center bg-linear-to-br from-pink-100 via-pink-50 to-pink-50">
-            <div><p>This Website is Work in Progress</p></div>
+            <div className="absolute top-4 left-4 bg-rose-200 text-rose-900 px-4 py-2 rounded-full text-sm font-medium z-10">
+                <p>This Website is Work in Progress</p>
+            </div>
             <div className="max-w-7xl w-full mx-auto flex flex-col md:flex-row items-center gap-8 py-20 px-6 lg:px-10">
                 <div className="w-full md:w-1/2 text-left text-rose-900/90 px-4">
                     <p className="text-lg md:text-xl italic text-rose-700 mb-4">Spice Up Your Day with Our</p>
