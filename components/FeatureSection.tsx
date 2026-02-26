@@ -10,9 +10,14 @@ import WhatsApp4 from "../assets/WhatsApp Image 2026-01-24 at 11.31.38 AM.jpeg
 import WhatsApp5 from "../assets/WhatsApp Image 2026-01-24 at 11.32.12 AM.jpeg";
 import WhatsApp6 from "../assets/WhatsApp Image 2026-02-24 at 12.10.01 PM.jpeg";
 
+type galleryType = {
+  name: string
+  imageurl: StaticImageData;
+}
+
 export default function FeatureSection() {
   const [open, setOpen] = useState<null | { src: StaticImageData; alt?: string }>(null);
-
+  
   const features = [
     {
       id: 1,
@@ -34,7 +39,32 @@ export default function FeatureSection() {
     },
   ];
 
-  const gallery = [WhatsApp1, WhatsApp2, WhatsApp3, WhatsApp4, WhatsApp5, WhatsApp6];
+  const gallery: galleryType[] = [
+    {
+      name: "Chocolate Assortment",
+      imageurl: WhatsApp1,
+    },
+    {
+       name: "Birthday Cake",
+      imageurl: WhatsApp2
+    },
+    {
+       name: "Black Forest Cake",
+      imageurl: WhatsApp3
+    },
+    {
+       name: "Beef Wellington",
+      imageurl: WhatsApp4
+    },
+    {
+       name: "Pannetonne",
+      imageurl: WhatsApp5
+    },
+    {
+       name: "Saltbread",
+      imageurl: WhatsApp6
+    }
+  ]
 
   return (
     <section className="flex flex-col items-center justify-center bg-linear-to-br from-pink-100 via-pink-50 to-pink-50 py-20 px-6 lg:px-10">
@@ -60,18 +90,19 @@ export default function FeatureSection() {
             {gallery.map((img, idx) => (
               <button
                 key={idx}
-                onClick={() => setOpen({ src: img, alt: `cake-${idx}` })}
+                onClick={() => setOpen({ src: img.imageurl, alt: `cake-${idx}` })}
                 className="rounded-lg overflow-hidden shadow-lg bg-white/60 p-0 border-0 focus:outline-none"
               >
-                <div className="flex items-center justify-center h-72 md:h-80">
+                <div className="flex flex-col items-center justify-center h-72 md:h-80 gap-4">
                   <Image
-                    src={img.src}
+                    src={img.imageurl}
                     alt={`cake-${idx}`}
-                    width={img.width}
-                    height={img.height}
+                    width={100}
+                    height={100}
                     className="h-48 md:h-60 w-auto object-contain"
                     sizes="(max-width: 768px) 50vw, 20vw"
                   />
+                  <p>{img.name}</p>
                 </div>
               </button>
             ))}
