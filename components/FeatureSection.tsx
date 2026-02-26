@@ -8,6 +8,7 @@ import WhatsApp2 from "../assets/WhatsApp Image 2026-01-24 at 11.25.52 AM.jpeg
 import WhatsApp3 from "../assets/WhatsApp Image 2026-01-24 at 11.26.28 AM.jpeg";
 import WhatsApp4 from "../assets/WhatsApp Image 2026-01-24 at 11.31.38 AM.jpeg";
 import WhatsApp5 from "../assets/WhatsApp Image 2026-01-24 at 11.32.12 AM.jpeg";
+import WhatsApp6 from "../assets/WhatsApp Image 2026-02-24 at 12.10.01 PM.jpeg";
 
 export default function FeatureSection() {
   const [open, setOpen] = useState<null | { src: StaticImageData; alt?: string }>(null);
@@ -33,7 +34,7 @@ export default function FeatureSection() {
     },
   ];
 
-  const gallery = [WhatsApp1, WhatsApp2, WhatsApp3, WhatsApp4, WhatsApp5];
+  const gallery = [WhatsApp1, WhatsApp2, WhatsApp3, WhatsApp4, WhatsApp5, WhatsApp6];
 
   return (
     <section className="flex flex-col items-center justify-center bg-linear-to-br from-pink-100 via-pink-50 to-pink-50 py-20 px-6 lg:px-10">
